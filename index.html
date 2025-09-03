@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sorted = num.map((n) => n * 2);
+console.log(sorted)
+
+let scores = [45, 67, 89, 34, 90, 76, 54];
+let filter = scores.filter((n) => n > 60);
+let stundentScore = scores.find((n) => n > 80 )
+let total = scores.reduce((acc, score) => acc + score, 0);
+console.log(total);
+console.log(filter);
+console.log(stundentScore)
+
+let fruits = ['apple', 'banana', 'mango', 'orange', 'pear'];
+let sliced = fruits.slice (0 ,3);
+fruits.forEach((fruit, index, arr) => {
+  arr[index] = fruit.toUpperCase();
+});
+console.log (fruits);
+console.log (sliced)
+
+let fruits_B = ['apple', 'banana', 'mango', 'orange', 'pear'];
+let spliced = fruits_B.splice(2, 1, "grapes");
+ console.log(fruits_B); 
+ console.log(spliced); 
+
+ let names = ['John', 'Jane', 'Mark', 'Mary'];
+ console.log(names.includes('Mark'));
+
+ let number = [10, 67, 43, 78, 59, 35, 27,];
+ number.sort((a, b) => a - b);
+console.log(number); 
+
+let colors1 = ['red', 'blue'];
+let colors2 = ['green', 'yellow'];
+let combined = colors1.concat(colors2);
+console.log(combined);
+
+
+
+
+</script>
+
+</body>
+</html>
